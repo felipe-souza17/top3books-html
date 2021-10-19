@@ -1,35 +1,72 @@
+/*
+    outra sugestão de tema:
+    body
+    background-image: url(image/bg.jpg);-->
+    background-color:purple;
+    markmodal color: indigo
+    .btn{
+    background-color: lavender;
+    color: black;
+*/
+/* Global Configs */
+html {
+    scroll-behavior: smooth;
+}
 body{
     background-image: url(image/livros.jpg);
     background-color: #cccccc;
     background-attachment: fixed;
     background-size: cover;
 }
+mark{
+    color: white;
+    background-color: #8b665285;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+/* Nav */
+.bg-nav {
+    background-color: #71452c;
+}
+/* Carousel */
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+.carousel-caption{
+    background-color: rgba(255, 255, 255, 0.671);
+    color: black;
+    padding-left: 17%;
+    padding-right: 17%;
+}
+/* Container */
 .container{
+    padding: 5px 15px;
     margin-top: 20px;
     background-color:#481c04;
     padding-bottom: 12px;
     width: 68%;
     margin-bottom: 20px;
 }
-#fontwhite{
-    color: white;
-}
-a{
-    color: white;
-}
-mark{
-    color: white;
-    background-color: #8b665285;
-}
-.carousel-caption{
-    background-color: rgba(128, 128, 128, 0.212);
-    padding-left: 17%;
-    padding-right: 17%;
-}
-hr{
-    margin-top: 20px;
+.card {
+    margin: 15px auto;
+    width: 50%;
 }
 .btn{
+    background-color: #71452c;
+    color: white;
+}
+/* Sell Books */
+#sell {
+    text-align: center;
+}
+.btn-sell {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 10px auto;
     background-color: #71452c;
     color: white;
 }
@@ -39,10 +76,21 @@ hr{
 mark#modal{
     color: white;
 }
-footer{
+
+
+/* Footer */
+footer {
+    background-color: #71452c;
+    color: white;
+    font-size: 14px;
     text-align: center;
 }
-img{
-    width: 100%;
-    height: auto;
+
+
+
+/* Cards Responsive */
+@media(max-width: 768px) {
+    .card {
+        width: 100%;
+    }
 }
